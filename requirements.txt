@@ -1,6 +1,5 @@
 streamlit
 stable-baselines3
-gymnasium
 ta
 alpaca-py
 matplotlib
