@@ -76,7 +76,7 @@ def calculate_sharpe(returns, rf=0.01):
     er = returns - rf
     return np.mean(er)/ (np.std(er)+1e-9)
 
-@st.experimental_singleton
+@st.cache_resource
 def load_models():
     dummy_env = make_vec_env(lambda: gym.make("CartPole-v1"), n_envs=1)
     ppo = PPO("MlpPolicy", dummy_env, verbose=0)
