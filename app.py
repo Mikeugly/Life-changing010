@@ -8,6 +8,7 @@ import numpy as np
 import pandas as pd
 import ta
 import streamlit as st
+import gym
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import StandardScaler
 from stable_baselines3 import PPO, DDPG
